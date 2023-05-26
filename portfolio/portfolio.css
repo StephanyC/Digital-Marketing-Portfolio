@@ -1,0 +1,109 @@
+*{
+  margin:0%;
+  padding:0;
+  box-sizing:border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:burlywood;
+  }
+  
+  body{
+    margin:0px;
+  }
+  /* This to get the whole navigation bar to fill */
+
+  li {
+    float:right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:dotted;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  };
+
+  div.content{
+    text-align:right;
+  }
+  
+
+  /* Main Page Photos */
+  div.gallery {
+    margin: 10px;
+    float: left;
+    padding:0;
+  }
+
+  #image1{
+    display: block;
+    margin-left:73.4%;
+    /* margin-right: auto; */
+    padding: 2px;
+  }
+  
+  .content{
+    display:flex;
+    float:left;
+  }
+
+  .typed{
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
+  animation: 
+  typing 4s steps(20, end) forwards;
+  font-size: 1.2rem;
+  width: 0;
+  text-align:left;
+  font-family:"Trirong", sans-serif;
+  }
+
+  @keyframes typing {
+    from {width: 0 }
+    to {width: 10% }
+    to {width:20%}
+    to {width:30%}
+    to {width:40%}
+    to {width:50%}
+    to {width:60%}
+    to {width:70%}
+    to {width:80%}
+    to {width:90%}
+    to {width:100%}
+  }
+
+  /* Logo Baruch Psychology */
+.logo{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 20%;
+}
+
+.slide{
+  display: block;
+  margin:5%;
+}
+
+.logo1,.logo2{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 20%;
+}
+
+.slide2{
+  display: block;
+  margin:5%;
+}
