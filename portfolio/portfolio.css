@@ -14,6 +14,7 @@ ul {
   
   body{
     margin:0px;
+    background-image:url(images/pexels-henry-&-co-2341290.jpg);
   }
   /* This to get the whole navigation bar to fill */
 
@@ -36,7 +37,6 @@ ul {
   div.content{
     text-align:right;
   }
-  
 
   /* Main Page Photos */
   div.gallery {
@@ -50,38 +50,16 @@ ul {
     margin-left:73.4%;
     /* margin-right: auto; */
     padding: 2px;
+    position:absolute;
   }
   
-  .content{
-    display:flex;
-    float:left;
-  }
+  /* .content{
+    margin:auto;
+    color:black;
+    text-shadow:5px 2px white, 2px 4px, white, 3px 5px white;
+    font-family:"Trirong", sans-serif;
+    } */
 
-  .typed{
-  overflow: hidden;
-  border-right: .15em solid black;
-  white-space: nowrap;
-  animation: 
-  typing 4s steps(20, end) forwards;
-  font-size: 1.2rem;
-  width: 0;
-  text-align:left;
-  font-family:"Trirong", sans-serif;
-  }
-
-  @keyframes typing {
-    from {width: 0 }
-    to {width: 10% }
-    to {width:20%}
-    to {width:30%}
-    to {width:40%}
-    to {width:50%}
-    to {width:60%}
-    to {width:70%}
-    to {width:80%}
-    to {width:90%}
-    to {width:100%}
-  }
 
   /* Logo Baruch Psychology */
 .logo{
@@ -107,3 +85,137 @@ ul {
   display: block;
   margin:5%;
 }
+
+.wrapper.four {
+  font-size: 70%;
+  float: left;
+  font-family: 'Righteous', cursive;
+}
+.four .type{
+  padding: 1rem 1rem;
+  width: auto;
+  margin: auto;
+}
+.four h3 {
+  width: 110ch;
+  border-right: 4px solid black;
+  margin: 1rem auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  }
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
+
+.main{
+  height:70vh;
+  width:100%;  
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  text-align:left;
+  font-family: 'Righteous', cursive;
+  font-size:50%;
+  padding:2%;
+}
+
+h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: black; 
+  font-size: 2rem;
+}
+
+.roll{
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color:burlywood;
+}
+
+.roll #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;  
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+/* Contact Form Page */
+.box{
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+form{
+  background:white;
+  display:flex;
+  flex-direction:column;
+  padding: 2vw 4vw;
+  width:90%;
+  max-width:600px;
+  border-radius:10px;
+}
+
+form h3{
+color:black;
+font-weight:800;
+margin-bottom:20px;
+}
+
+form input, form textarea{
+border:0;
+margin: 5px 0;
+padding:20px;
+outline:none;
+background:lightgray;
+font-size: 16px;
+}
+
+form button{
+  padding:15px;
+  background:whitesmoke;
+  color:#111;
+  font-size:18px;
+  border:0;
+  outline:none;
+  cursor:pointer;
+  width:150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+
+
+
+
+
